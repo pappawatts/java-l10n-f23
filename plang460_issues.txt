@@ -1,0 +1,10 @@
+Create pt_BR
+Check on Arabic translations. Files aren't in the resources. still not working. 
+Where the WOW coming from?
+Greek, Chinese, "apples" was in English
+
+Answer python questions from homework
+Do a small Finnish lesson
+Figure out regex for quotes fix
+Check on l10n-app in AR
+Start class with walkthrough line-by-line with debug of my quote script

@@ -1,0 +1,180 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+mainClassName = 'LocalizationApp'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(15)
+    }
+}
+
+javafx {
+    version = '15'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+task runInEnglishUK {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=en_UK']
+    }
+    finalizedBy 'run'
+}
+
+task runInEnglishCanada {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=en_CA']
+    }
+    finalizedBy 'run'
+}
+
+task runInPortuguese {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=pt']
+    }
+    finalizedBy 'run'
+}
+
+task runInPortuguesePortugal {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=pt_PT']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishMexico {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_MX']
+    }
+    finalizedBy 'run'
+}
+
+task runInSerbianSerbia {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=sr_SR']
+    }
+    finalizedBy 'run'
+}
+
+task runInChineseSimplified {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=zh_CN']
+    }
+    finalizedBy 'run'
+}
+
+task runInChineseTraditional {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=zh_TW']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishPeru {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_PE']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishArgentina {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_AR']
+    }
+    finalizedBy 'run'
+}
+
+task runInArabicEgypt {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ar_EG']
+    }
+    finalizedBy 'run'
+}
+
+task runInArabicJordan {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ar_JO']
+    }
+    finalizedBy 'run'
+}
+
+task runInRussianRussia {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ru_RU']
+    }
+    finalizedBy 'run'
+}
+
+task runInJapaneseJapan {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ja_JP']
+    }
+    finalizedBy 'run'
+}
+
+task runInGermanGermany {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=de_DE']
+    }
+    finalizedBy 'run'
+}
+
+task runInNavajoUS {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=nv_US']
+    }
+    finalizedBy 'run'
+}
+
+task runInSwedishSweden {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=sv_SE']
+    }
+    finalizedBy 'run'
+}
+
+task runInGreekGreece {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=el_GR']
+    }
+    finalizedBy 'run'
+}
+
+task runInVietnameseVietnam {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=vi_VN']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishGuatemala {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_GT']
+    }
+    finalizedBy 'run'
+}
+
+task runHindiIndia {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=hi_IN']
+    }
+    finalizedBy 'run'
+}
+task runThaiThailand {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=th_TH']
+    }
+    finalizedBy 'run'
+}
