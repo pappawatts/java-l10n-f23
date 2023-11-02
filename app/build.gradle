@@ -172,9 +172,80 @@ task runHindiIndia {
     }
     finalizedBy 'run'
 }
+
 task runThaiThailand {
     doFirst {
         applicationDefaultJvmArgs = ['-Duser.language=th_TH']
+    }
+    finalizedBy 'run'
+}
+
+task runInJapaneseUS {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ja_US']
+    }
+    finalizedBy 'run'
+}
+
+task runInFrenchFrance {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=fr_FR']
+    }
+    finalizedBy 'run'
+}
+
+task runInAinuJapan {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ain_JP']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishUS {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_US']
+    }
+    finalizedBy 'run'
+}
+
+task runInHawaiianUS {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=haw_US']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishPanama {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_PA']
+    }
+    finalizedBy 'run'
+}
+
+task runInArabicSaudiArabia {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=ar_SA']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishSpain {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_ES']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishVenezuela {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_ve']
+    }
+    finalizedBy 'run'
+}
+
+task runInInuktitutCA {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=iu_CA']
     }
     finalizedBy 'run'
 }
