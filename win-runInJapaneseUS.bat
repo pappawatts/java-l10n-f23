@@ -1,5 +1,5 @@
 @echo off
 
-call scripts\gradle.bat runInJapaneseJapan
+call scripts\gradle.bat runInJapaneseUS
 
 pause
